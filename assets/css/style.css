@@ -1,4 +1,4 @@
-/* Google fontimport */
+/* Google fonts import */
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200;300;400;500;600;700&display=swap');
 
 /* Asterisk wildcard selector to override default styles added by the browser */
@@ -35,7 +35,7 @@ header a {
 }
 
 h1 {
-    font-family: 'oswald', sans-serif;
+    font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
     color: #252525;
@@ -77,10 +77,42 @@ nav {
 /* Main content*/
 main {
     background-color: lightblue;
-    /* Make main element take up any surplace space to push footer down */ 
+    /* Make main element take up any surplus space to push footer down */ 
     flex: 1 0 auto;   
+    margin-top: 47px;
 }
 /* Footer */
 footer {
     background-color: orange;
+}
+/* Media query tablets and larger 768px and top*/
+@media screen and (min-width: 768px) {
+    /*Header*/
+    nav {
+        display: block;
+        position: relative;
+        box-shadow: none;
+        width: fit-content;
+        padding-right: 1rem;
+    }
+    #menu {
+        display: flex;
+    }
+    #menu > li {
+        padding-left: 1rem;
+    }
+    .nav-toggle-label{
+        display: none;
+    }
+    #logo {
+        font-size: 200%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    /*Main content*/
+    main{
+        /* Push main content down to accommodate larger header*/
+        margin-top: 79px;
+    }
 }
