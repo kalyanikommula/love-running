@@ -164,7 +164,14 @@ hr {
 #times h3 {
     /* override the heading color set in general style */
     color: #fafafa;
-
+}
+/* Gallery page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+#photos {
+    line-height: 0;
 }
 /* Footer */
  #social-networks {
