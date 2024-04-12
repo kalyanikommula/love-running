@@ -64,7 +64,7 @@ nav {
     display: none;
     top: 100%;
 }
-/* Nav toggle*/
+/* Nav toggle */
 #nav-toggle:checked~nav {
     display: block;
 }
@@ -74,7 +74,7 @@ nav {
 .nav-toggle-label {
     font-size: 2rem;
 }
-/* Main content*/
+/* Main content */
 main {
     
     /* Make main element take up any surplus space to push footer down */ 
@@ -89,7 +89,7 @@ main {
     position: relative;
 }
 #cover-text {
-    background-color: rgba(249, 107, 107, .7);
+    background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
     bottom: 30px;
@@ -98,11 +98,35 @@ main {
     padding-top: 40px;
     padding-left: 10px;
 }
-#cover-text > h2, #cover-text > h3 {
+ #cover-text > h2, #cover-text > h3 {
     color:#ffffff;
 }
+
+/* reasons section */
+#reasons {
+    width: 90%;
+    margin: 20px auto;
+}
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
+
+#benefits-physical > div, 
+#benefits-mental > div {
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+#benefits p{
+    padding: 0 20px;
+}
+hr {
+    border-top: 1px solid #3a3a3a;
+    margin: 5px 0;
+}
 /* Footer */
-#social-networks {
+ #social-networks {
     text-align: center;
     padding: 20px 0;
     display: flex;
@@ -114,7 +138,7 @@ main {
     padding: 5%;
     color: #3a3a3a;
 }
-/* Media query tablets and larger 768px and top*/
+/* Media query tablets and larger 768px and top */
 @media screen and (min-width: 768px) {
     /*Header*/
     nav {
@@ -139,9 +163,9 @@ main {
         margin: 0 0.5rem;
     }
 
-    /*Main content*/
+    /* Main content */
     main {
-        /* Push main content down to accommodate larger header*/
+        /* Push main content down to accommodate larger header */
          margin-top: 79px;
     }
     /* logo */
@@ -150,7 +174,7 @@ main {
         right: 50px;
     }
 }
-/* larger devices (laptops and desktops 992px and up)*/
+/* larger devices (laptops and desktops 992px and up) */
 @media screen and (min-width: 992px){
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
