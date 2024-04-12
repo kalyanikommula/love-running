@@ -304,7 +304,7 @@ main {
  }
  #signup-form {
     max-width: 400px;
-    position:absolute;
+    position: absolute;
     left: 10%;
     top: 150px;
  }
@@ -326,6 +326,7 @@ main {
     #photos {
         column-count: 4;
     }
+    
 }
 
 @media screen and (min-width: 1200px) {
@@ -350,5 +351,13 @@ main {
     #benefits-physical > div {
         align-self: flex-end;
     }
+    /* signup page */
+   #signup {
+    background-position: center;
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
 
+
+   }
 }
